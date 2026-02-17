@@ -120,11 +120,3 @@ When contributing to packages within this workspace:
 2. Commit and push changes in the submodule repository
 3. Update the parent workspace to reference the new submodule commit
 4. Push changes to this workspace repository
-
-## License
-
-Refer to individual package licenses for licensing information.
-
-## Contact
-
-For questions or issues, please contact the USC Robosub team.
