@@ -85,8 +85,10 @@ To add a new ROS2 package as a submodule:
 
 2. Add the package as a git submodule:
    ```bash
-   git submodule add <repository_url> <package_name>
+   git submodule add -b <branch_name> <repository_url> <package_name>
    ```
+   
+   **Note:** The `-b <branch_name>` flag specifies which branch of the repository to track. This is important because the branch must contain a valid ROS2 package structure with a `package.xml` file at its root for `rosdep install` to resolve dependencies and for `colcon build` to successfully compile the package. Ensure the specified branch is set up as a proper ROS2 package before adding it as a submodule.
 
 3. Update the main repository:
    ```bash
