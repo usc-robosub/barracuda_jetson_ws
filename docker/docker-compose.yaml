@@ -1,0 +1,31 @@
+services:
+  barracuda-jetson:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    user: root
+    privileged: true
+    image: barracuda-jetson
+    container_name: barracuda-jetson
+    tty: true
+    network_mode: host
+    ipc: host
+    volumes:
+      - ${HOME}/.ssh:/root/.ssh
+  barracuda-jetson-dev:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    user: root
+    privileged: true
+    image: barracuda-jetson-dev
+    container_name: barracuda-jetson-dev
+    tty: true
+    network_mode: host
+    ipc: host
+    volumes:
+      - ${HOME}/.ssh:/root/.ssh
+      - ${HOME}/.gitconfig:/root/.gitconfig
+      - ${HOME}/.vimrc:/root/.vimrc
+      - ../src:/ros2_ws/src
+    profiles: ["dev"]
