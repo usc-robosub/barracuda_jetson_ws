@@ -15,7 +15,7 @@ This is a ROS2 Humble workspace designed to run on the Jetson AGX Orin for the U
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/usc-robosub/barracuda_jetson_ws.git
+   git clone https://github.com/usc-robosub/barracuda_jetson_ws.git --recursive
    cd barracuda_jetson_ws
    ```
 
