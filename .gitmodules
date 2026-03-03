@@ -10,3 +10,7 @@
 	path = src/barracuda-control
 	url = https://github.com/usc-robosub/barracuda-control.git
 	branch = ros2-pkg
+[submodule "src/barracuda-ping-360"]
+	path = src/barracuda-ping-360
+	url = https://github.com/usc-robosub/barracuda-ping-360.git
+	branch = ros2
