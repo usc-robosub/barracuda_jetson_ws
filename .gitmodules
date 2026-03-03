@@ -2,10 +2,6 @@
 	path = src/barracuda-thrusters
 	url = https://github.com/usc-robosub/barracuda-thrusters.git
 	branch = jetson-orin-nano-ros2-humble
-[submodule "src/barracuda_description"]
-	path = src/barracuda_description
-	url = https://github.com/usc-robosub/barracuda_description.git
-	branch = ros2-rsp
 [submodule "barracuda-control"]
 	path = src/barracuda-control
 	url = https://github.com/usc-robosub/barracuda-control.git
