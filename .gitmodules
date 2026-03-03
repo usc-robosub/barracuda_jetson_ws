@@ -14,3 +14,7 @@
 	path = src/barracuda-description
 	url = https://github.com/usc-robosub/barracuda-description.git
 	branch = ros2-rsp
+[submodule "src/barracuda-dvl"]
+	path = src/barracuda-dvl
+	url = https://github.com/usc-robosub/barracuda-dvl.git
+	branch = ros2
