@@ -8,7 +8,7 @@ RUN chmod +x /entrypoint.sh
 
 RUN rosdep update && \
     apt-get update && \
-    apt-get install -y python3-pip && \
+    apt-get install -y python3-pip ros-humble-rmw-cyclonedds-cpp && \
     rosdep install --from-paths src --ignore-src -y --skip-keys="python3-jetson-gpio"
 
 RUN /bin/bash -c "source /opt/ros/humble/setup.bash && colcon build --symlink-install"
