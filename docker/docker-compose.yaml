@@ -9,9 +9,6 @@ services:
     container_name: barracuda-jetson
     tty: true
     network_mode: host
-    ipc: host
-    devices:
-      - /dev/ttyUSB0:/dev/ttyUSB0
     volumes:
       - ${HOME}/.ssh:/root/.ssh
   barracuda-jetson-dev:
@@ -24,9 +21,6 @@ services:
     container_name: barracuda-jetson-dev
     tty: true
     network_mode: host
-    ipc: host
-    devices:
-      - /dev/ttyUSB0:/dev/ttyUSB0
     volumes:
       - ${HOME}/.ssh:/root/.ssh
       - ${HOME}/.gitconfig:/root/.gitconfig
