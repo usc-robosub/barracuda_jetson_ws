@@ -10,6 +10,8 @@ services:
     tty: true
     network_mode: host
     ipc: host
+    ports:
+      - 8766:8765
     devices:
       - /dev/ttyUSB0:/dev/ttyUSB0
     volumes:
@@ -25,6 +27,8 @@ services:
     tty: true
     network_mode: host
     ipc: host
+    ports:
+      - 8765:8765
     devices:
       - /dev/ttyUSB0:/dev/ttyUSB0
     volumes:

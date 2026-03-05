@@ -8,4 +8,6 @@ echo "=========================================="
 echo " Barracuda Jetson Workspace Ready! "
 echo "=========================================="
 
+ros2 launch barracuda_jetson barracuda.launch.py
+
 exec "$@"
