@@ -1,5 +1,11 @@
 # Barracuda Jetson Workspace
 
+> [!WARNING]
+> **This repository is DEPRECATED.**
+> 
+> For the most actively updated ros2 workspace, please refer to [barracuda_ws](https://github.com/usc-robosub/barracuda_ws).
+
+
 ## Description
 
 This is a ROS2 Humble workspace designed to run on the Jetson AGX Orin for the USC Robosub team's Barracuda autonomous underwater vehicle (AUV). This workspace serves as the central development environment for all ROS2 packages used in the Barracuda project.
